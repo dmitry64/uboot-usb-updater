@@ -116,7 +116,7 @@ void MainWindow::on_generateScriptButton_released()
     }
 
     script += "echo \"SCRIPT FINISHED\" \n";
-    script += "reset \n";
+    script += "clrlogo \n";
     ui->scriptTextEdit->setPlainText(script);
     qDebug() << "U-boot script generated!";
     ui->statusBar->showMessage("U-boot script generated!");
