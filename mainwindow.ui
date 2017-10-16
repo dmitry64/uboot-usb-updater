@@ -187,7 +187,7 @@
               </sizepolicy>
              </property>
              <property name="text">
-              <string>Make output directory</string>
+              <string>Open output directory</string>
              </property>
             </widget>
            </item>

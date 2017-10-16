@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include <QDesktopServices>
 #include <QDirIterator>
 #include <QFileDialog>
 #include <QProcess>
@@ -170,4 +171,9 @@ void MainWindow::on_mkimageScript_released()
 void MainWindow::on_makeOutputDirectory_released()
 {
     ui->progressBar->setValue(0);
+    QString outputPath = ui->outputPath->text();
+    if(outputPath.size()==0) {
+        return;
+    }
+    QDesktopServices::openUrl(outputPath);
 }
