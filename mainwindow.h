@@ -26,6 +26,10 @@ private slots:
 
     void on_generateScriptButton_released();
 
+    void on_mkimageScript_released();
+
+    void on_makeOutputDirectory_released();
+
 private:
     Ui::MainWindow *ui;
 };
